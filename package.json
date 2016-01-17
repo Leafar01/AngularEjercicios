@@ -1,0 +1,11 @@
+{
+  "name": "Rafa",
+  "version": "1.0.0",
+  "description": "Pruebas en angular",
+  "main": "angular-route.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafa",
+  "license": "ISC"
+}
