@@ -11,11 +11,11 @@ $routeProvider
 		templateUrl : "templates/pagina1.html",
 		controller : "controllerMain"
 	})
-	.when("/paginados", {
+	.when("/pagina2", {
 		templateUrl : "templates/pagina2.html",
 		controller : "controllerpagina2"
 	})
-	.when("/paginatres", {
+	.when("/pagina3", {
 		templateUrl : "templates/pagina3.html",
 		controller : "controllerpagina3"
 	})
@@ -35,3 +35,4 @@ miModulo.controller('controllerpagina2', function ($scope){
 miModulo.controller('controllerpagina3', function ($scope){
 	$scope.paginaTRES ='tercetra página'
 });
+
