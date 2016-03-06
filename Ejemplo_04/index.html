@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.formato1{
+			background-color: #369;
+			color: white;
+			font-size: 20px;
+			padding: 5px;
+		}
+		.formato2{
+			background-color: #963;
+			color: white;
+			font-size: 20px;
+			padding: 5px;
+		}
+		.formato3{
+			background-color: #693;
+			color: white;
+			font-size: 20px;
+			padding: 5px;
+		}
+	</style>
+</head>
+
+
+<body ng-app="miApp" ng-controller="miController as vm">
+
+<p>Me llamo rafa tengo... <span ng-class="{formato1:vm.years<18, formato2:vm.years==18, formato3:vm.years>18}">{{vm.years}}</span> de edad.</p>
+<input type="text" placeholder="años" ng-model="vm.edad">
+<input type="button" value="edad" ng-click="vm.comprobar();">
+
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>	
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.formato1{
+			background-color: #369;
+			color: white;
+			font-size: 20px;
+			height: 200px;
+			padding: 2em;
+			width: 200px;
+		}
+		.formato2{
+			background-color: #963;
+			color: white;
+			font-size: 20px;
+			height: 200px;
+			padding: 2em;
+			width: 200px;
+		}
+		.formato3{
+			background-color: #693;
+			color: white;
+			font-size: 20px;
+			height: 200px;
+			padding: 2em;
+			width: 200px;
+		}
+	</style>
+</head>
+
+
+<body ng-app="miApp" ng-controller="miController as vm">
+
+<p ng-class="vm.clase">Me llamo rafa</p>
+
+<select ng-model="vm.clase">
+	<option value="sinformato">Sin formato</option>
+	<option value="formato1">formato 1</option>
+	<option value="formato2">formato 2</option>
+	<option value="formato3">formato 3</option>
+</select>
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>	
+</body>
+</html>

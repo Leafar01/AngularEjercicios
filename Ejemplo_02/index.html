@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body ng-app="miApp1">
+	<div ng-controller="miController1 as vm">
+		<input type="text" ng-model="vm.dato1">
+		<input type="text" ng-model="vm.dato2">
+		<input type="button" value="resultado" ng-click="vm.sumar();">
+		<br>
+		<h4>
+		Este es el resultado {{vm.suma}}
+		</h4>
+	</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+<script type="text/javascript" src="ejemplo2.js"></script>
+</body>
+</html>
